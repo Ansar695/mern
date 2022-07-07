@@ -1,0 +1,204 @@
+.cheq_main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cheq_main .left{
+    width: 18%;
+    position: relative;
+}
+.cheq_main .right{
+    width: 82%;
+    height: auto;
+    position: relative;
+}
+.cheq_main .right .topbar{
+    height: 50px;
+    background-color: white;
+    box-shadow: .1px .1px 8px .1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 18%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    color: black;
+    z-index: 111;
+}
+.cheq_main .right .topbar .topbar_left .search{
+    width: 100%;
+    padding: 0rem .6rem;
+    border: .1px solid gray;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cheq_main .right .topbar .topbar_left .search input{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+}
+.cheq_main .right .topbar .topbar_right{
+    display: flex;
+}
+.cheq_main .right .topbar .topbar_right .navlink{
+    margin-left: .3rem;
+    margin-right: .3rem;
+    text-decoration: none;
+    color: black;
+    padding: .28rem 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(36,36,121);
+}
+.user_table{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    margin-bottom: 1rem!important;
+}
+.user_table .search_cheque{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+.user_table .search_cheque .inputs{
+    width: 40%;
+    height: 28px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 0rem .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user_table .search_cheque .inputs input{
+    border: none;
+    width: 80%;
+    height: 100%;
+    outline: none;
+}
+.user_table .search_cheque .inputs i{
+    font-size: 18px;
+}
+.user_table table{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+.user_table table th{
+    border-bottom: 1px solid black;
+}
+.user_table table tr, th, td{
+    padding: .6rem .3rem;
+}
+.user_table tr:nth-child(2n){
+    background-color: rgb(231, 233, 241);
+}
+
+
+
+.cheq_main .menu_bar{
+    position: fixed;
+    top: -50%;
+    bottom: 105%;
+    left: 18%;
+    right: 0%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 1rem;
+}
+.cheq_main .menu_bar_active{
+    top: 0;
+    bottom: 50%;
+    height: 300px;
+}
+.cheq_main .menu_bar .top{
+    width: 100%;
+    height: auto;
+}
+.cheq_main .menu_bar .top .fa-times{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.cheq_main .menu_bar .bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cheq_main .menu_bar .bottom .navlink{
+    padding: .25rem 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.fa-times{
+    cursor: pointer;
+}
+
+.fa-bars{
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width: 900px){
+    .cheq_main .right .topbar .topbar_right .navlink{
+        padding: .2rem .7rem;
+    }
+    .user_table table{
+        font-size: 14px;
+    }
+    .user_table table tr, th, td{
+        padding: .6rem .2rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .cheq_main .right .topbar .topbar_right .navlink{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .cheq_main .right .topbar .topbar_right .navlink{
+        margin-left: .2rem;
+        margin-right: .2rem;
+        padding: .15rem .5rem;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .user_table .search_cheque{
+        display: flex;
+        flex-direction: column;
+    }
+    .user_table .search_cheque .inputs{
+        width: 80%;
+    }
+}

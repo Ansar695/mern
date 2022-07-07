@@ -1,0 +1,431 @@
+.display_main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.display_main .left{
+    width: 18%;
+    position: relative;
+}
+.display_main .right{
+    width: 82%;
+    height: auto;
+    position: relative;
+}
+.display_main .right .topbar{
+    height: 50px;
+    background-color: white;
+    box-shadow: .1px .1px 8px .1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 18%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    color: black;
+}
+.display_main .right .topbar .topbar_left .search{
+    width: 100%;
+    padding: 0rem .6rem;
+    border: .1px solid gray;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display_main .right .topbar .topbar_left .search input{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+}
+.display_main .right .topbar .topbar_right{
+    display: flex;
+}
+.display_main .right .topbar .topbar_right .navlink{
+    margin-left: .3rem;
+    text-decoration: none;
+    color: black;
+    margin-right: .3rem;
+    padding: .28rem 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(36,36,121);
+}
+
+
+
+
+.display_main .right .bottom{
+    margin-top: 70px;
+    padding: .3rem 1rem;
+}
+.display_main .right .bottom h1 i{
+    cursor: pointer;
+    padding: .0rem .54rem;
+    border: .1px solid black;
+}
+.display_main .right .bottom table{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+.display_main .right .bottom table th{
+    border-bottom: 1px solid black;
+}
+.display_main .right .bottom table tr, th, td{
+    padding: .6rem .3rem;
+}
+.display_main .right .bottom tr:nth-child(2n){
+    background-color: rgb(231, 233, 241);
+}
+.display_main .right .bottom .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1.5rem;
+}
+.display_main .right .bottom .search h1{
+    width: 50%;
+}
+.display_main .right .bottom .search .inputs{
+    width: 40%;
+    height: 27px;
+    background-color: white;
+    border: .5px solid black;
+    padding: .1rem .5rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display_main .right .bottom .search .inputs input{
+    outline: none;
+    border: none;
+    width: 85%;
+    height: 100%;
+}
+.display_main .right .bottom .search .inputs i{
+    cursor: pointer;
+}
+.display_main .right .top table tr .btn_add{
+    padding: .3rem 1rem;
+    background-color: rgb(36,36,121);
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.display_main .overlay{
+    position: fixed;
+    top: 51%;
+    bottom: 51%;
+    left: 51%;
+    right: 51%;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in-out;
+}
+.display_main .overlay .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.display_main .overlay_active{
+    top: 5%;
+    bottom: 5%;
+    left: 20%;
+    right: 15%;
+}
+.display_main .overlay .inner .icon_cut{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(36,36,121);
+    padding: 0rem 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.display_main .overlay .inner .icon_cut i{
+    padding: .6rem .64rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+}
+.display_main .overlay .inner .input{
+    width: 60%;
+    height: auto;
+    margin-top: .6rem;
+    margin-bottom: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display_main .overlay .inner .input label{
+    font-size: 18px;
+}
+.display_main .overlay .inner .input input, select{
+    width: 70%;
+    height: 27px;
+}
+.display_main .overlay .inner button{
+    padding: .4rem 1.5rem;
+    border-radius: 4px;
+    background-color: rgb(59, 59, 131);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+.display_main .overlay .inner button:hover{
+    background-color: rgb(36,36,121);
+}
+.display_main .overlay .inner .cheque_box{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.display_main .overlay .inner .cheque_box .input{
+    width: 100%;
+}
+.display_main .overlay .inner .cheque_box .input_inner{
+    width: 100%;
+    display: flex;
+}
+.display_main .overlay .inner .cheque_box .input_inner .input{
+    width: 60%;
+}
+
+
+
+
+
+.add_customer_overlay{
+    position: fixed;
+    top: -100%;
+    left: 20%;
+    right: 15%;
+    bottom: 102%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;  
+    z-index: 90000000;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.add_customer_overlay_active{
+    top: 4%;
+    left: 15%;
+    right: 10%;
+    bottom: 5%;
+}
+.add_customer_overlay .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.add_customer_overlay .inner h2{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(36,36,121);
+    padding: 0rem .3rem;
+    color: white;
+    margin-bottom: .2rem;
+}
+.add_customer_overlay .inner .input{
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add_customer_overlay .inner .input  label{
+    font-size: 17px;
+}
+.add_customer_overlay .inner .input input{
+    width: 80%;
+    height: 26px;
+}
+.add_customer_overlay .inner .btns_add{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add_customer_overlay .inner button{
+    padding: .3rem 1.2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(63, 63, 145);
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+.add_customer_overlay .inner button:hover{
+    background-color: rgb(36,36,121);
+}
+.icon{
+    position: absolute;
+    top: 1%;
+    right: 1.5%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+.display_main .menu_bar{
+    position: fixed;
+    top: -50%;
+    bottom: 105%;
+    left: 18%;
+    right: 0%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 1rem;
+}
+.display_main .menu_bar_active{
+    top: 0;
+    bottom: 50%;
+    height: 300px;
+}
+.display_main .menu_bar .top{
+    width: 100%;
+    height: auto;
+}
+.display_main .menu_bar .top .fa-times{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.display_main .menu_bar .bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.display_main .menu_bar .bottom .navlink{
+    padding: .25rem 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.fa-times{
+    cursor: pointer;
+}
+
+.fa-bars{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    .display_main .right .bottom table{
+        font-size: 14px;
+    }
+    .topbar_left{
+        display: none;
+    }
+    .display_main .right .topbar .topbar_right .navlink{
+        margin-left: .2rem;
+        margin-right: .2rem;
+        padding: .25rem .8rem;
+        border: .1px solid rgb(36,36,121);
+    }
+    .display_main .right .bottom{
+        overflow: auto;
+    }
+    .add_customer_overlay_active{
+        top: 3%;
+        left: 10%;
+        right: 6%;
+        bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .display_main .right .bottom table{
+        font-size: 13px;
+    }
+    .display_main .right .bottom table tr, th, td{
+        padding: .6rem .2rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .display_main .right .topbar .topbar_right .navlink{
+        display: none;
+    }
+    .display_main .right .bottom .search h1{
+        width: 50%;
+        font-size: 24px;
+    }
+    .display_main .right .bottom .search .inputs{
+        width: 35%;
+        height: 25px;
+        padding: .1rem .3rem;
+        border-radius: 2px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    .display_main .right .topbar .topbar_right .navlink{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}

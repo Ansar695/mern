@@ -1,0 +1,59 @@
+.customer_main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.customer_main .left{
+    width: 18%;
+    position: relative;
+}
+.customer_main .right{
+    width: 82%;
+    height: auto;
+    position: relative;
+}
+.customer_main .right .topbar{
+    height: 50px;
+    background-color: white;
+    box-shadow: .1px .1px 8px .1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 18%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    color: black;
+}
+.customer_main .right .topbar .topbar_left .search{
+    width: 100%;
+    padding: 0rem .6rem;
+    border: .1px solid gray;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customer_main .right .topbar .topbar_left .search input{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+}
+.customer_main .right .topbar .topbar_right{
+    display: flex;
+}
+.customer_main .right .topbar .topbar_right .navlink{
+    margin-left: .3rem;
+    margin-right: .3rem;
+    padding: .28rem 1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(36,36,121);
+}

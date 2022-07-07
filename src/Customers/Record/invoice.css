@@ -1,0 +1,220 @@
+.invoice_main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.invoice_main .left{
+    width: 18%;
+    position: relative;
+}
+.invoice_main .right{
+    width: 82%;
+    height: auto;
+    position: relative;
+}
+.invoice_main .right .topbar{
+    height: 50px;
+    background-color: white;
+    box-shadow: .1px .1px 8px .1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 18%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    color: black;
+    z-index: 111;
+}
+.invoice_main .right .topbar .topbar_left .search{
+    width: 100%;
+    padding: 0rem .6rem;
+    border: .1px solid gray;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.invoice_main .right .topbar .topbar_left .search input{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+}
+.invoice_main .right .topbar .topbar_right{
+    display: flex;
+}
+.invoice_main .right .topbar .topbar_right .navlink{
+    margin-left: .3rem;
+    margin-right: .3rem;
+    text-decoration: none;
+    color: black;
+    padding: .28rem 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(36,36,121);
+}
+
+
+
+.invoice_main .right .inner{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 55px;
+}
+.invoice_main .right .inner .card{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: .2px .2px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.invoice_main .right .inner .card .left{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.invoice_main .right .inner .card .left .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.invoice_main .right .inner .card .left .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.invoice_main .right .inner .card .left p{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+.invoice_main .right .inner .card .left button{
+    padding: .3rem 1.2rem;
+    background-color: rgb(36,36,121);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+.invoice_main .right .inner .card .right{
+    width: 50%;
+    height: auto;
+    overflow-x: auto;
+}
+.invoice_main .right .inner .card .right .input{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .6rem;
+    overflow: hidden;
+}
+.invoice_main .right .inner .card .right .show{
+    display: none;
+}
+#cheque_input input{
+    width: 90%;
+}
+.invoice_main .right .inner .card .right .input input{
+    width: 55%;
+    height: 25px;
+    outline: none;
+}
+.invoice_main .right .inner .card .right .btn{
+    padding: .4rem 1.2rem;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: rgb(36,36,121);
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.user_table{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem!important;
+}
+.user_table table{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+.user_table table th{
+    border-bottom: 1px solid black;
+}
+.user_table table tr, th, td{
+    padding: .6rem .3rem;
+}
+.user_table tr:nth-child(2n){
+    background-color: rgb(231, 233, 241);
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    .user_table{
+        width: 800px;
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .invoice_main .right .inner{
+        padding: .8rem;
+    }
+    .invoice_main .right .inner .card{
+        padding: .8rem;
+    }
+    .invoice_main .right .inner .card .left{
+        width: 26%;
+    }
+    .invoice_main .right .inner .card .left .image{
+        width: 80px;
+        height: 80px;
+    }
+    .invoice_main .right .inner .card .left button{
+        padding: .2rem .8rem;
+    }
+    .invoice_main .right .inner .card .right{
+        width: 65%;
+    }
+    .invoice_main .right .inner .card .right .btn{
+        padding: .3rem .8rem;
+    }
+    .invoice_main .right .topbar .topbar_right .navlink{
+        margin-left: .15rem;
+        margin-right: .15rem;
+        padding: .2rem .7rem;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .invoice_main .right .topbar .topbar_right .navlink{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,187 @@
+.topay_main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.topay_main .left{
+    width: 18%;
+    position: relative;
+}
+.topay_main .right{
+    width: 82%;
+    height: auto;
+    position: relative;
+}
+.topay_main .right .topbar{
+    height: 50px;
+    background-color: white;
+    box-shadow: .1px .1px 8px .1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 18%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    color: black;
+}
+.topay_main .right .topbar .topbar_left .search{
+    width: 100%;
+    padding: 0rem .6rem;
+    border: .1px solid gray;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topay_main .right .topbar .topbar_left .search input{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+}
+.topay_main .right .topbar .topbar_right{
+    display: flex;
+}
+.topay_main .right .topbar .topbar_right .navlink{
+    margin-left: .3rem;
+    margin-right: .3rem;
+    text-decoration: none;
+    color: black;
+    padding: .28rem 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(36,36,121);
+}
+
+
+.topay_bottom{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 55px;
+}
+.topay_main .right .topay_bottom .heading{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topay_main .right .topay_bottom .heading .search{
+    width: 40%;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem .5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.topay_main .right .topay_bottom .heading .search input{
+    outline: none;
+    border: none;
+    height: 100%;
+}
+
+
+.topay_main .right .topay_bottom table{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+.topay_main .right .topay_bottom table th{
+    border-bottom: 1px solid black;
+}
+.topay_main .right .topay_bottom table tr, th, td{
+    padding: .6rem 1rem;
+}
+.topay_main .right .topay_bottom tr:nth-child(2n){
+    background-color: rgb(231, 233, 241);
+}
+.topay_main .topay_bottom table tbody tr td button{
+    padding: .3rem .8rem;
+    background-color: rgb(60, 60, 133);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+
+.topay_main .menu_bar{
+    position: fixed;
+    top: -50%;
+    bottom: 105%;
+    left: 18%;
+    right: 0%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 1rem;
+}
+.topay_main .menu_bar_active{
+    top: 0;
+    bottom: 50%;
+    height: 300px;
+}
+.topay_main .menu_bar .top{
+    width: 100%;
+    height: auto;
+}
+.topay_main .menu_bar .top .fa-times{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.topay_main .menu_bar .bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topay_main .menu_bar .bottom .navlink{
+    padding: .25rem 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.fa-times{
+    cursor: pointer;
+}
+
+.fa-bars{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 950px){
+    .topay_bottom{
+        width: 900px;
+        overflow: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+    .topay_main .right .topbar .topbar_right .navlink{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}

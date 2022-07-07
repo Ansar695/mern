@@ -1,0 +1,466 @@
+.record_main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.record_main .left{
+    width: 18%;
+    position: relative;
+}
+.record_main .right{
+    width: 82%;
+    height: auto;
+    position: relative;
+}
+.record_main .right .topbar{
+    height: 50px;
+    background-color: white;
+    box-shadow: .1px .1px 8px .1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 18%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    color: black;
+    z-index: 999999;
+}
+.record_main .right .topbar .topbar_left .search{
+    width: 100%;
+    padding: 0rem .6rem;
+    border: .1px solid gray;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.record_main .right .topbar .topbar_left .search input{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+}
+.record_main .right .topbar .topbar_right{
+    display: flex;
+}
+.record_main .right .topbar .topbar_right .navlink{
+    margin-left: .3rem;
+    margin-right: .3rem;
+    text-decoration: none;
+    color: black;
+    padding: .28rem 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(36,36,121);
+}
+
+
+
+.record_main .right .bottoms{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 1rem;
+}
+.record_main .right .bottoms .record_bottom{
+    width: 100%;
+    height: auto;
+}
+.record_main .right .bottoms .record_bottom_active{
+    display: none;
+}
+.record_main .right .bottoms .record_bottom .heading{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.record_main .right .bottoms .record_bottom .heading .search{
+    width: 40%;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem .5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.record_main .right .bottoms .record_bottom .heading .search input{
+    outline: none;
+    border: none;
+    height: 100%;
+}
+.record_main .right .bottoms .record_bottom table{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+.record_main .right .bottoms .record_bottom table th{
+    border-bottom: 1px solid black;
+}
+.record_main .right .bottoms .record_bottom table tr, th, td{
+    padding: .6rem 1rem;
+}
+.record_main .right .bottoms .record_bottom tr:nth-child(2n){
+    background-color: rgb(231, 233, 241);
+}
+.record_main .bottoms .record_bottom table tbody tr td button{
+    padding: .3rem .8rem;
+    background-color: rgb(60, 60, 133);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+.record_main .right .bottoms .user_record_overlay{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.record_main .right .bottoms .user_record_overlay_active{
+    display: block;
+}
+.record_main .right .bottoms .user_record_overlay .inner{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: .2px .2px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .left{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .left .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .left .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .left p{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .left button{
+    padding: .3rem 1.2rem;
+    background-color: rgb(36,36,121);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right{
+    width: 65%;
+    height: auto;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right p{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 15px;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right .payments{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-top: .1px solid gray;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right .payments .user_info{
+    margin-right: 3rem;
+    padding: 1rem;
+    padding-bottom: .3rem;
+    display: flex;
+    flex-direction: column;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right .payments .user_info h4{
+    font-size: 20px;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right .payments .total h4{
+    color: rgb(36,36,121);
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right .payments .to_pay h4{
+    color: red;
+}
+.record_main .right .bottoms .user_record_overlay .inner .user_card .right .payments .status h4{
+    color: red;
+}
+
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.user_table{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem!important;
+}
+.user_table_active{
+    margin-right: 105%;
+}
+.user_table .search_invoice{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1px solid gray;
+}
+.user_table .search_invoice .search{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.user_table .search_invoice .search .from{
+    display: flex;
+}
+.user_table .search_invoice .search button{
+    padding: .3rem 1rem;
+    outline: none;
+    color: white;
+    border: none;
+    background-color: rgb(36,36,121);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.user_table .search_invoice .search input{
+    width: 150px;
+    height: 25px;
+    margin-left: 1rem;
+}
+.user_table table{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+.user_table table th{
+    border-bottom: 1px solid black;
+}
+.user_table table tr, th, td{
+    padding: .6rem .3rem;
+}
+.user_table tr:nth-child(2n){
+    background-color: rgb(231, 233, 241);
+}
+.user_table table tr td button{
+    padding: .3rem 1rem;
+    outline: none;
+    color: white;
+    background-color: rgb(36,36,121);
+    margin-right: .2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.user_table table tr td i{
+    padding: .5rem .54rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.user_table table tr .last{
+    text-align: center;
+    padding: .3rem 0rem!important;
+}
+.user_table table tr td .fa-trash{
+    color: white;
+    background-color: red;
+    margin-left: .5rem;
+}
+.user_table table tr td .fa-arrow-right{
+    color: white;
+    background-color: rgb(36,36,121);
+    margin-left: .5rem;
+}
+.user_table .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1.5rem;
+}
+
+
+.email_box{
+    position: fixed;
+    top: 51%;
+    bottom: 51%;
+    left: 51%;
+    right: 51%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 9999999999;
+    transition: all .2s ease;
+}
+.email_box_active{
+    top: 10%;
+    bottom: 10%;
+    left: 15%;
+    right: 15%;
+}
+.email_box .top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    background-color: rgb(36,36,121);
+    color: white;
+}
+.email_box .top i{
+    padding: .5rem;
+    border: .1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.email_box .bottom{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.email_box .bottom input{
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+    width: 70%;
+    height: 27px;
+}
+.email_box .bottom textarea{
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+    width: 70%;
+    height: 80px;
+}
+.email_box .bottom button{
+    padding: .4rem 1.2rem;
+    background-color: rgb(60, 60, 150);
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.email_box .bottom button:hover{
+    background-color: rgb(36,36,121);
+}
+
+
+
+.record_main .menu_bar{
+    position: fixed;
+    top: -50%;
+    bottom: 105%;
+    left: 18%;
+    right: 0%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    z-index: 9999999;
+    padding: 1rem;
+}
+.record_main .menu_bar_active{
+    top: 0;
+    bottom: 50%;
+    height: 300px;
+}
+.record_main .menu_bar .top{
+    width: 100%;
+    height: auto;
+}
+.record_main .menu_bar .top .fa-times{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.record_main .menu_bar .bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.record_main .menu_bar .bottom .navlink{
+    padding: .25rem 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.fa-times{
+    cursor: pointer;
+}
+
+.fa-bars{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .record_main .bottoms .record_bottom table tbody tr td button{
+        padding: .3rem .4rem;
+        font-size: 12px;
+    }
+    .record_main .right .bottoms .record_bottom table{
+        font-size: 14px;
+    }
+    .record_main .right .bottoms .record_bottom table tr, th, td{
+        padding: .6rem .6rem;
+    } 
+}
+
+@media screen and (max-width: 750px){
+    .record_main .right .bottoms{
+        width: 650px;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .record_main .right .topbar .topbar_right .navlink{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}
